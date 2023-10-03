@@ -26,30 +26,33 @@
       <form>
         <div class="inputs" align="left">
           <div class="itemBox">
-            <label id="lbl-distance">Distance (mi):</label>
+            <label class="lbl-distance">Distance (mi)*:</label>
             <input
               type="number"
               aria-labelledby="lbl-distance"
+              role="distanceInput"
               id="distInput"
               value=""
               required="required"
             />
           </div>
           <div class="itemBox">
-            <label id="lbl-time">Time (min):</label>
+            <label class="lbl-time">Time (min)*:</label>
             <input
               type="number"
               aria-labelledby="lbl-time"
+              role="timeInput"
               id="timeInput"
               value=""
               required="required"
             />
           </div>
           <div class="itemBox">
-            <label id="lbl-description">Description:</label>
+            <label class="lbl-description">Description:</label>
             <input
               type="text"
               aria-labelledby="lbl-description"
+              role="descriptionInput"
               id="descInput"
               value=""
               required="required"
@@ -59,7 +62,7 @@
         <button class="add-index" align="center">Index Run</button>
       </form>
 
-      <table id="outputTable"></table>
+      <table aria-labelledby="lbl-outputTable" role="LoggedDataTable" id="outputTable"></table>
     </div>
   </body>
 </html>
@@ -84,5 +87,8 @@
     margin:2px;
     background: #0000FF;
   }
-  
+  .lbl-distance, .lbl-time{
+  color:red;
+}
+  }
 </style>

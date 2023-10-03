@@ -17,11 +17,11 @@
     <form>
       <div class="loginInputs" align="left">
         <div class="itemBox">
-          <label id="lbl-username">Username:</label>
+          <label class="lbl-username">Username*:</label>
           <input type="text" aria-labelledby="lbl-username" id="username" value="" required="required"  />
         </div>
         <div class="itemBox">
-          <label id="lbl-password">Password:</label>
+          <label class="lbl-password">Password*:</label>
           <input type="password" aria-labelledby="lbl-password" id="password" value="" required="required" />
         </div>
       </div>
@@ -42,7 +42,9 @@
   #username, #password{
     width:40%;
   }
+  .lbl-password, .lbl-username{
+    color:red;
+  }
   
-  
-  
+  }
 </style>
